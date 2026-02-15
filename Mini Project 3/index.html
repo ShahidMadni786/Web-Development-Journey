@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="main-container-parent">
+        
+            <div class="input">
+                <input type="text" placeholder="Type Your City" id="myinput">
+                <i class="fa-solid fa-magnifying-glass" id="btn" ></i>
+            </div>
+            <div class="error">
+                <div class="error-img">
+                    <img src="/assets/message/not-found.png" alt="">
+                </div>
+                <div class="msg">
+                    <p> Oops City not Found </p>
+                </div>
+            </div>
+            <div class="ui-app">
+                <div class="ui-img">
+                    <img src="/assets/message/search-city.png" alt="">
+                </div>
+                <div class="message">
+                    <p> <span>Search City</span> <br> Find out weather conditions of your city</p>
+                </div>
+            </div>
+            <div class="main-container">
+            <div class="location">
+                <div class="sub-loc">
+                <i class="fa-solid fa-location-dot" ></i>
+                <h3 id="city-location">Singapur</h3>
+            </div>
+            <div class="sec-loc">
+                <p id="date">Thu, 08 Aug</p>
+            </div>
+            </div>
+            <div class="images">
+                <div class="img">
+                    <img src="/assets/weather/clouds.svg" alt="" srcset="" id="images">
+                </div>
+                <div class="img-text">
+                    <h3 id="temp">30 °C</h3>
+                    <p id="clouds">Clouds</p>
+                </div>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="humidity-text">
+                        <h6>Humidity</h6>
+                        <p  id="humi">70%</p>
+                    </div>
+                    </div>
+                    <div class="wind-speed">
+                        <i class="fas fa-wind"></i>
+                        <p>Wind Speed</p>
+                        <h6 id="wind">4.12M/S</h6>
+                    </div>
+                </div>
+                <div class="scroll-container">
+                    <div class="days7 day0"><p>Tueday</p> <img src="/assets/weather/clear.svg" alt="" srcset=""> <h4>28 °C</h4></div>
+                    <div class="days7 day1"><p>Tueday</p> <img src="/assets/weather/clear.svg" alt="" srcset=""> <h4>28 °C</h4></div>
+                    <div class="days7 day2"><p>Tueday</p> <img src="/assets/weather/clear.svg" alt="" srcset=""> <h4>28 °C</h4></div>
+                    <div class="days7 day3"><p>Tueday</p> <img src="/assets/weather/clear.svg" alt="" srcset=""> <h4>28 °C</h4></div>
+                    <div class="days7 day4"><p>Tueday</p> <img src="/assets/weather/clear.svg" alt="" srcset=""> <h4>28 °C</h4></div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

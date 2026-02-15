@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+    color :white;
+}
+body{
+    background-color: #111111;
+}
+.logo h2{
+    font-size: 26px;
+}
+header{
+    position: relative;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem 2rem 5rem;
+}
+nav{
+    display: flex;
+    gap: 1.5rem;
+}
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+
+}
+nav a:hover{
+    color: #0DA34E;
+}
+.letstalk{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navi-bar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.lets{
+    font-size: 16px;
+    transform: translateX(138%);
+    cursor: pointer; 
+    transition: all 0.4s ease;
+}
+.pencil i{
+    font-size: 14px;
+    
+}
+.pencil{
+    background-color: #0DA34E;
+    padding: 12px 12px 12px 118px;
+    border-radius: 2rem;
+    transition: all 0.4s ease;
+    
+}
+.what-we-do{
+    background-color: white;
+    border-radius: 16px;
+    padding-left: 22px;
+    padding-right: 4px;
+    padding-top: 4px;
+    position: absolute;
+    left: 794px;
+    height: 42px;
+    transition: all 0.5s ease-in-out ;
+}
+
+.what-we-do a{
+color: #111111;
+}
+.what-we-do i{
+    color : black
+}
+.outer{
+    display: none;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    gap: 0.5rem;
+    
+}
+.outer-active{
+    display: flex;
+}
+.inner{
+    margin-bottom: 1rem;
+    padding-top: 4px;
+}

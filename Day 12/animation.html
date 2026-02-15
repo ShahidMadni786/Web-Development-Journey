@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            background-color: aquamarine;
+            
+        }
+        .box{
+            background-color: beige;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           animation: identifier 1s linear  infinite alternate; 
+          
+          
+        }
+     
+        @keyframes identifier {
+            from{
+            
+            }
+            to{
+             transform: translateY(-460px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Animation</div>
+    </div>
+</body>
+</html>

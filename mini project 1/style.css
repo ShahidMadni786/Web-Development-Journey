@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8d1dbd;
+  
+}
+.big-box {
+    margin-top: 4rem;
+    max-width: 100%;
+    min-height: 55vh;;
+    background-color: rgba(44, 8, 79, 0.8); /* Use rgba for transparency */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(5px); /* Apply blur effect */
+
+}
+
+.box-h2 h2{
+    margin-top: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: yellow;
+   
+
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    color: white;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+.input input{
+    height: 30px;
+    border: 2px solid #FFF6EA;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+
+}
+.select{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    color: white;
+    font-weight: 600;
+}
+.select select{
+    width: 60px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+
+}
+select:focus {
+    background-color: #f0f0f0; /* Your desired background color */
+    color: black; /* Your desired text color */
+  }
+.flagwala{
+    display: flex;
+    align-items: center;
+    border: 1.2px solid #EBD3F8;
+    border-radius: 5px;
+    
+}
+.flagwala img{
+    width: 27px;
+}
+.to select{
+    width: 60px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+}
+.to{
+    margin-top: 1rem;
+    color: white;
+    font-weight: 600;
+}
+.to  select:focus {
+    background-color: #f0f0f0; /* Your desired background color */
+    color: black; /* Your desired text color */
+  }
+.from{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.4rem;
+    padding: 0.5rem;
+}
+.opposit {
+    margin-top: 2.5rem;
+}
+.btn-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    width: 100%;
+
+}
+.btn-1 button{
+    background-color: #EBD3F8;
+    color: #2E073F;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}

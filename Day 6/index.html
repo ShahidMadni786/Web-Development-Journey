@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        :root{
+            --color: blue;
+            --seccolor:yellow;
+            --pad:13px;
+        }
+    .con{
+        
+        background-color: var(--seccolor);
+    }
+    nav ul li:nth-child(3){
+        background-color: var(--color);
+
+    }
+    p{
+        background-color: red;
+    }
+    ul{
+        display: flex;
+
+    }
+    nav ul li{
+        list-style: none;
+        padding: var(--pad);
+    }
+    </style>
+</head>
+<body>
+    <nav class="con">
+        <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>contact</li>
+    </ul>
+    </nav>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, minus excepturi incidunt, esse magnam numquam dicta est autem, animi veritatis placeat beatae assumenda necessitatibus saepe fugit unde dolorem nam quis quo? At quod quis ratione in. Laudantium fugiat esse eaque aliquam id fugit accusantium aliquid?</p>
+</body>
+</html>

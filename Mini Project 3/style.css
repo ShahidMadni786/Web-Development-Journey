@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+/* Style the scrollbar track (the container around the scrollbar) */
+::-webkit-scrollbar {
+    width: 10px; /* Height for horizontal scrollbar */
+    height: 10px; /* Height for horizontal scrollbar */
+}
+
+/* Style the thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(226, 242, 0);
+    border-radius: 10px;
+}
+
+/* Style the track */
+::-webkit-scrollbar-track {
+    background-color: rgb(24, 6, 113);
+    border-radius: 10px;
+}
+
+/* Style the buttons (if any) */
+::-webkit-scrollbar-button {
+    background-color: rgb(52, 20, 179);
+    display: none; /* Hide the buttons */
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    background-image: radial-gradient( #2831b3 0%, #0d3c76a9 2%, #130160 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-container-parent{
+    border-radius: 12px;
+    border: solid white;
+    box-shadow: 1.6px 2px 8px black;
+   width: 300px;
+   height: 496px;
+   background: rgb(70, 222, 255, .4);
+   background: radial-gradient(circle, rgba(70, 222, 255, .8) 0%, rgba(42, 99, 230, .7) 100%);
+   backdrop-filter: blur(6px);
+   padding: 1.5rem;
+}
+.main-container {
+ display: none;
+   
+}
+
+.location {
+    color: white;
+}
+
+.location h3 {
+    font-weight: 550;
+}
+
+#myinput {
+    width: 90%;
+    height: 40px;
+    border: 0.7px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background: transparent;
+}
+
+#myinput::placeholder {
+    color: white;
+}
+
+#myinput:focus {
+    outline: none;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.input i {
+    color: white;
+    transform: translateX(-180%);
+    cursor: pointer;
+}
+
+.sub-loc {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.sub-loc i {
+    font-size: 12px;
+}
+
+.location {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.images {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: .6rem;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.weather-details {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.scroll-container img {
+    width: 45px;
+}
+.scroll-container{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    gap: .7rem;
+    overflow-x: auto;
+    padding-bottom: .7rem;
+}
+.scroll-container h4{
+    font-size: 14px;
+}
+
+.days7 {
+    width: 72px;
+    height: 118px;
+    background-color: rgb(7, 7, 79, 0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.days7 p {
+    font-size: 12px;
+}
+.days7 h4{
+    font-size: 12px;
+}
+.ui-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+    display: block;
+}
+.ui-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.ui-img img {
+    width: 80%;
+}
+.message{
+    text-align: center;
+}
+.message p span{
+  font-weight: 700;
+  text-shadow: 1.5px 2.9px 5px black;
+}
+.error{
+    margin-top: 1rem;
+    color: white;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   font-weight: 600;
+   text-shadow: .7px .4px 2px black;
+   display: none;
+}
+.error-img{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.error img{
+    width: 80%;
+}

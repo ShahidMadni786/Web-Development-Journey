@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav ul li{
+    list-style: none;
+    padding: 2px 20px 15px 15px;
+    color: white;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px); 
+}
+.container{
+    width: 1025px;
+    height: 570px;
+    border: none;
+    border-radius: 10px;
+   /* box-shadow: 0px 0px 30px rgba(208, 255, 68, 0.5); */
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+.box1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("cover.jpg");
+    background-size: cover;
+    border-image-source: linear-gradient(hsl(240 100% 50% /.4),hsl(0 100% 50% / .4));
+    border-image-slice: fill 1;
+}
+.para{
+    font-size: 42px;
+    color: white;
+    position: relative;
+    bottom: 124px;
+}
+.para2{
+    font-size: 25px;
+    color: white;
+    position: relative;
+    bottom: 223px;
+    letter-spacing: 7px;
+    padding: 5px;
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+}
+.forms{
+    background-color: transparent;
+    width: 330px;
+    margin: 30px 0px;
+    position: relative;
+    border-bottom: 3px solid white;
+}
+p{
+    text-align: center;
+    padding: 10px 0px;
+    color: rgb(234, 29, 189);
+}
+p>a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+p>a:hover{
+   text-decoration:underline;
+   font-style: italic;
+}
+input:focus ~label,
+input:valid ~label {
+    top: -5px;
+}
+#btn{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btn:hover{
+    background:rgba(0,0,0,0.3);
+    color: white;
+}
+.forms input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: white;
+    padding: 0px 30px 0px 10px;
+}
+.forms label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: white;
+    transition: 0.5s;
+}
+.forms i{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+}
+    </style>
+</head>
+<body>
+   <nav>
+     <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Services</li>
+     </ul>
+   </nav>
+   <div class="wrapper">
+        <div class="container">
+            <div class="box1">
+                <h1>Login</h1>
+                <form action="">
+                    <div class="forms">
+                        <input type="email" required>
+                        <label>Email</label>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="forms">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <p><input type="checkbox">Remember me <a href="#">Forget Password</a></p>
+                    <input type="button" value="Login" id="btn"> 
+                    <p>Don't have an account <a href="#">Register here</a></p>
+                </form>
+            </div>
+            <div class="box2">
+                <p class="para"><b><i> Welcome to </i></b></p>
+                <p class="para2">Shahid Madni</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

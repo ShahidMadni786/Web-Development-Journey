@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform and transition</title>
+    <style>
+        .container{
+            width:100vw;
+            height: 100vh;
+            display :flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: aqua;
+            transition: transform 2s ease-in 1s;
+        }
+        .box:hover{
+         /* transform: rotate(360deg); */
+         /* transform: scale(2); */
+         /* transform: skew(35deg); */
+         transform: translatey(-16px);
+        }
+    </style>
+</head>
+<body><div class="container">
+        <div class="box">This is box</div>
+    </div>
+</body>
+</html>

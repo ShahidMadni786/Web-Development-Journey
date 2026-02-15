@@ -1,0 +1,1 @@
+let ans = console.log(op2.toUpperCase());

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="main-container">
+            <div class="head">
+                <h2>Password Generator
+                </h2>
+            </div>
+            <p id="copy">Copied</p>
+            <div class="input-box">
+                <div class="password"><input type="password" placeholder="Password" id="password" disabled sh><i class="fas fa-copy" id="copy-btn"></i>
+                </div>
+                <div class="btn"><button id="pass">Generate Password</button></div>   </div>
+                <div class="strength">
+                    <h3>strength</h3>
+                    <p id="strength-update">Weak</p>
+                </div>
+         <div class="second-container">
+            <div class="range">
+                <div class="range-count">
+                <label for="range">Password Length</label> <p id="count">0</p></div>
+                <div class="input-original">
+                <input type="range" min="
+                5" max="16"  id="range" >
+            </div>
+            </div>
+            <div class="check-boxes">
+                <div class="symbol">
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Include Symbols</label></div>
+
+                 <div class="numbers">
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Include Numbers</label></div>
+
+                <div class="lowercase">
+                    <input type="checkbox" name="" id="lowercase">
+                    <label for="lowercase">Include lowercase</label>
+                </div>
+
+                <div class="uppercase">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Include uppercase</label>
+                </div>
+
+            </div>
+           
+         </div>
+
+
+         
+
+        </div>
+
+    </main>
+
+
+    <Script src="script.js"></Script>
+</body>
+
+</html>

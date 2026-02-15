@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="head">
+                <h2>Simple Quiz</h2>
+            </div>
+
+            <!-- Question 1 -->
+            <div class="questions question1">
+                <div class="q-no"><h3>1. Which of the following is a correct way to declare a JavaScript variable?</h3></div>
+                <div class="answers">
+                    <div class="opt1"><p>variable x = 10;</p></div>
+                    <div class="opt2 correct"><p>let x = 10;</p></div>
+                    <div class="opt3"><p>x := 10;</p></div>
+                    <div class="opt4"><p>let 10 = x;</p></div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="questions question2">
+                <div class="q-no"><h3>2. What is the output of the following code?</h3></div>
+                <div class="code-block">
+                    <pre><code>console.log(typeof null);</code></pre>
+                </div>
+                <div class="answers">
+                    <div class="opt1"><p>"undefined"</p></div>
+                    <div class="opt2 correct"><p>"object"</p></div>
+                    <div class="opt3"><p>"null"</p></div>
+                    <div class="opt4"><p>"boolean"</p></div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="questions question3">
+                <div class="q-no"><h3>3. Which function is used to parse a string and return a number in JavaScript?</h3></div>
+                <div class="answers">
+                    <div class="opt1"><p>Number.parseString()</p></div>
+                    <div class="opt2"><p>Number()</p></div>
+                    <div class="opt3 correct"><p>parseFloat()</p></div>
+                    <div class="opt4"><p>stringToNumber()</p></div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="questions question4">
+                <div class="q-no"><h3>4. How can you add an element to the end of an array in JavaScript?</h3></div>
+                <div class="answers">
+                    <div class="opt1"><p>array.addElement(element)</p></div>
+                    <div class="opt2 correct"><p>array.push(element)</p></div>
+                    <div class="opt3"><p>array.add(element)</p></div>
+                    <div class="opt4"><p>array.append(element)</p></div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="questions question5">
+                <div class="q-no"><h3>5. Which of the following methods removes the last element from an array in JavaScript?</h3></div>
+                <div class="answers">
+                    <div class="opt1"><p>shift()</p></div>
+                    <div class="opt2 correct"><p>pop()</p></div>
+                    <div class="opt3"><p>slice()</p></div>
+                    <div class="opt4"><p>splice()</p></div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="questions question6">
+                <div class="q-no"><h3>6. What will the following code return?</h3></div>
+                <div class="code-block">
+                    <pre><code>Boolean(0);</code></pre>
+                </div>
+                <div class="answers">
+                    <div class="opt1 correct"><p>false</p></div>
+                    <div class="opt2"><p>true</p></div>
+                    <div class="opt3"><p>0</p></div>
+                    <div class="opt4"><p>undefined</p></div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="questions question7">
+                <div class="q-no"><h3>7. Which event occurs when the user clicks on an HTML element?</h3></div>
+                <div class="answers">
+                    <div class="opt1"><p>onmouseclick</p></div>
+                    <div class="opt2"><p>onhover</p></div>
+                    <div class="opt3 correct"><p>onclick</p></div>
+                    <div class="opt4"><p>onpress</p></div>
+                </div>
+            </div>
+     
+            <!-- Next Button at the end -->
+            <div class="next-btn">
+                <button id="next">Next</button>
+            </div>
+              <div class="win">
+                <p id="winner">You Scored 7 out of 7.</p>
+                <button id="play">Play Again</button>
+              </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
